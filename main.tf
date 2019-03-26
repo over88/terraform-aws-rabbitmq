@@ -215,7 +215,7 @@ resource "aws_elb" "elb" {
 
   subnets         = ["${var.subnet_ids}"]
   idle_timeout    = 3600
-  internal        = true
+  internal        = false
   security_groups = ["${aws_security_group.rabbitmq_elb.id}", "${var.elb_additional_security_group_ids}"]
 
   tags {
