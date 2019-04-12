@@ -39,6 +39,11 @@ variable "instance_type" {
   default = "m5.large"
 }
 
+variable "internal_lb" {
+  default = "false"
+}
+
+
 variable "instance_volume_type" {
   default = "standard"
 }
